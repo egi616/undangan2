@@ -1,0 +1,15 @@
+{
+  "displayNames": "Estars & Eather",
+  "groom": {
+    "name": "Estars Ly",
+    "order": "Putra Pertama",
+    "parents": "Bpk. H. Muhammad Jae & Ibu Hj. Febry",
+    "image": "assets/images/23.jpg"
+  },
+  "bride": {
+    "name": "Ether Ily",
+    "order": "Putri Ketiga",
+    "parents": "Bpk. Ir. H Lani & Ibu Drs. Sumi",
+    "image": "assets/images/24.jpg"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "undangan-static",
+  "private": true,
+  "type": "module",
+  
+  "scripts": {
+    "build:css": "tailwindcss -i assets/css/input.css -o assets/css/style.css --minify",
+    "watch": "tailwindcss -i assets/css/input.css -o assets/css/style.css --watch",
+    "build:qr": "esbuild assets/js/qr-code.js --bundle --minify --legal-comments=inline --outfile=assets/js/qr-code.bundle.js --format=iife"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "esbuild": "^0.28.1",
+    "qrcode": "^1.5.4",
+    "tailwindcss": "^4.3.3"
+  }
+}

@@ -1,0 +1,645 @@
+<!DOCTYPE html> 
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Undangan pernikahan Estars Ly dan Ether Ily. Informasi acara, galeri, dan konfirmasi kehadiran.">
+    <meta property="og:title" content="Undangan Pernikahan Estars &amp; Ether">
+    <meta property="og:description" content="Undangan pernikahan Estars Ly dan Ether Ily.">
+    <meta property="og:image" content="https://egi616.github.io/undangan_digital/assets/images/2.jpg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <script type="module" src="assets/js/app.js"></script>
+    <script defer src="assets/js/qr-code.bundle.js"></script>
+    <style>
+        .invitation-section {
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: 100% auto;
+        }
+
+        #home {
+            background-position: center;
+            background-size: cover;
+            background-color: #8d448b;
+        }
+
+        #music-toggle svg {
+            color: #8d448b;
+        }
+
+        #couple {
+            color: #7B357A;
+        }
+
+        #couple h2,
+        #couple h3,
+        #couple p {
+            color: #7B357A;
+        }
+
+        #event h2,
+        #event h3,
+        #event p {
+            color: #7B357A;
+        }
+
+        #couple [class*="border-[#ffd596]"],
+        #event [class*="border-[#ffd596]"] {
+            border-color: #8d448b;
+        }
+
+        #event [class*="bg-[#ffd596]"] {
+            background-color: rgb(141 68 139 / 12%);
+        }
+
+        #event [class*="text-[#c89b58]"],
+        #event a {
+            color: #7B357A;
+        }
+
+        #event a {
+            border-color: #8d448b;
+        }
+
+        [class*="border-[#ffd596]"] {
+            border-color: #8d448b;
+        }
+
+        [class*="bg-[#ffd596]"] {
+            background-color: rgb(141 68 139 / 12%);
+        }
+
+        [class*="text-[#c89b58]"],
+        [class*="text-[#8a652f]"] {
+            color: #7B357A;
+        }
+
+        [class*="bg-[#c89b58]"] {
+            background-color: #8d448b;
+        }
+
+        [class*="hover:bg-[#b0884d]"]:hover {
+            background-color: #7B357A;
+        }
+
+        [class*="bg-[#a3e635]"] {
+            background-color: #8d448b;
+            color: #fff;
+        }
+
+        [class*="hover:bg-[#86efac]"]:hover {
+            background-color: #7B357A;
+        }
+
+        hr {
+            border-color: #8d448b;
+        }
+
+        #ucapan {
+            background-color: #8d448b;
+            background-position: center top;
+            background-size: 100% auto;
+        }
+
+        #ucapan > div > h3,
+        #ucapan > div > p {
+            color: #fff;
+        }
+
+        #ucapan > div {
+            transform: translateY(4rem);
+        }
+
+        #amplop h2,
+        #amplop h2 + p {
+            color: #7B357A;
+        }
+
+        @media (max-width: 767px) {
+            .invitation-section:not(#home) {
+                background-position: center bottom;
+                background-size: 100% auto;
+            }
+
+            #home {
+                background-position: center;
+                background-size: cover;
+            }
+
+            #ucapan.invitation-section {
+                background-position: center top;
+                background-size: auto 70%;
+            }
+
+            #ucapan > div {
+                transform: none;
+            }
+        }
+    </style>
+    
+    <title>Undangan Pernikahan Estars &amp; Ether</title>
+</head>
+<body>
+    
+    <nav class="fixed bottom-12 md:bottom-10 left-0 right-0 mx-auto w-max max-w-[95vw] z-[9999] flex items-center justify-center gap-2 md:gap-4 p-2 md:p-3 bg-white/95 backdrop-blur-sm rounded-full shadow-2xl border border-gray-200">
+    <a href="#home" class="flex flex-col items-center justify-center w-10 h-10 md:w-12 md:h-12 text-gray-500 hover:text-[#8d448b] transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:w-7 md:h-7">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+        </svg>
+    </a>
+
+    <a href="#couple" class="flex flex-col items-center justify-center w-10 h-10 md:w-12 md:h-12 text-gray-500 hover:text-[#8d448b] transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:w-7 md:h-7">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+        </svg>
+    </a>
+
+    <a href="#galery" class="flex flex-col items-center justify-center w-10 h-10 md:w-12 md:h-12 text-gray-500 hover:text-[#8d448b] transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:w-7 md:h-7">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
+        </svg>
+    </a>
+
+    <a href="#event" class="flex flex-col items-center justify-center w-10 h-10 md:w-12 md:h-12 text-gray-500 hover:text-[#8d448b] transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:w-7 md:h-7">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+        </svg>
+    </a>
+
+    <a href="#ucapan" class="flex flex-col items-center justify-center w-10 h-10 md:w-12 md:h-12 text-gray-500 hover:text-[#8d448b] transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:w-7 md:h-7">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+        </svg>
+    </a>
+    <button id="music-toggle" type="button" class="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border border-purple-200 bg-white text-[#8d448b] shadow-md transition hover:bg-purple-50 focus:outline-none focus:ring-2 focus:ring-purple-300" aria-label="Putar musik" aria-pressed="false" title="Putar musik">
+        <svg id="music-play-icon" class="h-5 w-5 md:h-6 md:w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11-6.86a1 1 0 0 0 0-1.72l-11-6.86A1 1 0 0 0 8 5.14Z"></path>
+        </svg>
+        <svg id="music-pause-icon" class="hidden h-5 w-5 md:h-6 md:w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 5a2 2 0 0 1 2 2v10a2 2 0 1 1-4 0V7a2 2 0 0 1 2-2Zm10 0a2 2 0 0 1 2 2v10a2 2 0 1 1-4 0V7a2 2 0 0 1 2-2Z"></path>
+        </svg>
+    </button>
+</nav>
+
+    <section id="home" class="invitation-section relative w-full min-h-[100dvh] flex flex-col items-center justify-center bg-cover bg-center px-6" 
+        style="background-image: url('assets/beranda.jpg');">
+    
+    <div class="absolute inset-0 bg-[#4b1b50]/35"></div>
+    
+    <div class="relative text-center max-w-3xl z-10 text-white">
+        
+        <p class="text-lg md:text-xl text-white mb-4">Pernikahan dari</p>
+        <p id="guest-greeting" class="text-lg md:text-xl text-white mb-8">
+            Kepada Bapak/Ibu/Saudara/i<br><span id="guest-name"></span>
+        </p>
+
+        <h1 id="couple-display-names" class="font-wedding text-6xl md:text-8xl text-center text-white"></h1>
+
+        <div class="text-center mt-4 mb-4">
+    <button data-rsvp-open class="px-8 py-3 bg-[#8d448b] text-white font-bold rounded-full shadow-lg hover:bg-[#7B357A] transition-all transform hover:scale-105">
+        <div class="flex items-center justify-center space-x-2">
+            <span>Kirim RSVP & Ucapan</span>
+        </div>
+    </button>
+</div>
+
+<!-- 2. Container Modal (Background Gelap) -->
+<!-- Secara default class 'hidden' diaktifkan agar form tidak terlihat -->
+<div id="rsvpModal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity">
+    
+    <!-- Kotak Modal -->
+    <div class="bg-white rounded-2xl w-full max-w-md p-6 relative shadow-2xl animate-fade-in-up">
+        
+        <!-- Tombol Silang (Close) di Pojok Kanan Atas -->
+        <button data-rsvp-close class="absolute top-4 right-4 text-gray-400 hover:text-gray-700">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+
+        <!-- Judul Form Modal -->
+        <h3 class="text-2xl font-wedding text-center text-gray-800 mb-6">Kehadiran & Ucapan</h3>
+
+        <!-- 3. Form Anda -->
+        <div class="space-y-4 text-center">
+                <p class="text-gray-600 text-sm">Silakan lanjutkan ke formulir RSVP untuk mengonfirmasi kehadiran dan mengirim ucapan.</p>
+                <a id="rsvpFormLink" href="https://docs.google.com/forms/d/e/1FAIpQLSeMdw15IvAYaKq7sQTzlfMHrUvWl8-FV0CntKaX-lTwcvEDXA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="block w-full py-3 text-white bg-[#c89b58] rounded-lg font-bold hover:bg-[#b0884d] transition-colors">Buka Formulir RSVP</a>
+                <p class="text-xs text-gray-500">Formulir akan dibuka pada halaman baru.</p>
+            </div>
+    </div>
+</div>
+        
+        <p id="cover-date" class="text-lg md:text-xl text-white mb-4"></p>
+        <p id="event-countdown" class="text-sm md:text-base text-white" aria-live="polite">Memuat hitung mundur...</p>
+    </div>
+</section>
+    <section id="couple" class="invitation-section bg-white py-16 px-4 min-h-screen flex items-center justify-center" style="background-image: url('assets/2.png');">
+    <div class="max-w-4xl mx-auto w-full">
+        
+        <div class="text-center mb-12">
+            <h2 class="font-wedding text-4xl md:text-5xl text-gray-800 mb-4">
+                Assalamualaikum Wr Wb
+            </h2>
+            <p class="text-gray-600 max-w-xl mx-auto text-sm md:text-base leading-relaxed">
+                Dengan memohon rahmat dan ridho Allah SWT, Kami bermaksud mengundang Bapak / Ibu / Saudara(i) dalam rangkaian acara resepsi pernikahan kami:
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="bg-white rounded-[28px] p-8 text-center shadow-xl border-t-[6px] border-[#ffd596]">
+                <div class="relative w-48 h-48 mx-auto mb-6 flex items-center justify-center">
+                    <img 
+                        src="assets/images/23.jpg" 
+                        alt="" 
+                        class="w-40 h-40 object-cover rounded-full border-2 border-[#ffd596] p-1 shadow-md"
+                    >
+                    <!-- Jika Anda punya file gambar bingkai bunga/emas PNG, uncomment baris di bawah ini: -->
+                    <!-- <img src="/images/frame-gold.png" class="absolute inset-0 w-full h-full object-contain pointer-events-none"> -->
+                </div>
+
+                <h3 class="font-wedding text-3xl md:text-4xl text-gray-800 mb-2">
+                    
+                </h3>
+
+                <p class="text-gray-800 text-sm md:text-base mb-1">
+                    
+                </p>
+
+                <p class="text-gray-600 text-sm md:text-base leading-snug">
+                    
+                </p>
+            </div>
+
+            <div class="bg-white rounded-[28px] p-8 text-center shadow-xl border-t-[6px] border-[#ffd596]">
+                
+                <div class="relative w-48 h-48 mx-auto mb-6 flex items-center justify-center">
+                    <img 
+                        src="assets/images/24.jpg" 
+                        alt="" 
+                        class="w-40 h-40 object-cover rounded-full border-2 border-[#ffd596] p-1 shadow-md"
+                    >
+                </div>
+
+                <h3 class="font-wedding text-3xl md:text-4xl text-gray-800 mb-2">
+                    
+                </h3>
+
+                <p class="text-gray-800 text-sm md:text-base mb-1">
+                    
+                </p>
+
+                <p class="text-gray-600 text-sm md:text-base leading-snug">
+                    
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+</section>
+    <hr class="w-full border-t-2 border-[#c89b58] opacity-40">
+
+<section id="galery" class="invitation-section py-16 px-4 min-h-screen flex items-center justify-center bg-[#8d448b] bg-bottom bg-no-repeat" style="background-image: url('assets/3.png');">
+    
+    <div class="max-w-4xl mx-auto w-full relative z-10 px-4 sm:px-10 pb-20">
+        
+        <h3 class="text-3xl font-wedding text-center text-white mb-4">Foto pernikahan</h3>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-0 shadow-xl">    
+            <!-- Baris 1 -->
+            <!-- Menggunakan aspect-[16/10] atau h-32 md:h-48 agar bentuknya lanskap (melebar) -->
+            <div class="w-full h-32 md:h-48 overflow-hidden">
+                <img src="assets/images/7.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="w-full h-32 md:h-48 overflow-hidden">
+                <img src="assets/images/8.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="w-full h-32 md:h-48 overflow-hidden">
+                <img src="assets/images/9.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="w-full h-32 md:h-48 overflow-hidden">
+                <img src="assets/images/10.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Baris 2 -->
+            <div class="w-full h-32 md:h-48 overflow-hidden">
+                <img src="assets/images/11.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="w-full h-32 md:h-48 overflow-hidden">
+                <img src="assets/images/12.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="w-full h-32 md:h-48 overflow-hidden">
+                <img src="assets/images/13.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="w-full h-32 md:h-48 overflow-hidden">
+                <img src="assets/images/14.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+
+            </div>
+</section>
+    <section id="event" class="invitation-section bg-white py-16 px-4 min-h-screen flex items-center justify-center" style="background-image: url('assets/4.png');">
+    <div class="max-w-4xl mx-auto w-full">
+        
+        <div class="text-center mb-12">
+            <h2 class="font-wedding text-4xl md:text-5xl text-gray-800 mb-4">
+                Akad dan Resepsi Pernikahan
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+    <!-- Card 1: Akad Nikah -->
+    <div class="bg-white rounded-[28px] p-8 text-center shadow-xl border-t-[6px] border-[#ffd596]">
+        
+        <div class="w-56 h-32 mx-auto mb-4 flex items-center justify-center">
+            <img src="assets/6.png" alt="Kotak cincin" class="w-full h-full object-contain mix-blend-multiply">
+        </div>
+
+        <h3 class="font-wedding text-3xl md:text-4xl text-gray-800 mb-4">
+            
+        </h3>
+
+        <p class="text-gray-800 font-semibold text-base mb-1">
+            
+        </p>
+
+        <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-6 px-4">
+            
+        </p>
+
+        <hr class="border-t border-gray-200 my-6">
+
+        <!-- Grid Tanggal & Waktu -->
+        <div class="grid grid-cols-2 gap-4">
+            <!-- Tanggal -->
+            <div class="flex flex-col items-center p-3 bg-gray-50 rounded-xl border border-gray-100">
+                <div class="w-10 h-10 mb-2 rounded-full bg-[#ffd596]/20 flex items-center justify-center text-[#c89b58]">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                </div>
+                <span class="text-sm text-gray-500"></span>
+                <span class="text-sm text-gray-800"></span>
+            </div>
+
+            <!-- Waktu -->
+            <div class="flex flex-col items-center p-3 bg-gray-50 rounded-xl border border-gray-100">
+                <div class="w-10 h-10 mb-2 rounded-full bg-[#ffd596]/20 flex items-center justify-center text-[#c89b58]">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <span class="text-sm text-gray-500">Waktu</span>
+                <span class="text-sm  text-gray-800"></span>
+                <span class="text-[12px] text-gray-400">Until End</span>
+            </div>
+
+            <div class="col-span-2">
+                <a href="https://maps.app.goo.gl/ujqYrJUnKLBDaGHs5" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 p-3.5 bg-[#ffd596]/20 hover:bg-[#ffd596]/30 transition rounded-xl border border-[#ffd596] text-[#8a652f] font-semibold text-sm shadow-sm">
+                    <svg class="w-5 h-5 text-[#c89b58]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    Lihat Lokasi (Google Maps)
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2: Resepsi Nikah -->
+    <div class="bg-white rounded-[28px] p-8 text-center shadow-xl border-t-[6px] border-[#ffd596]">
+        
+        <!-- Ikon Gelas Bersulang -->
+        <div class="w-56 h-32 mx-auto mb-4 flex items-center justify-center">
+            <img src="assets/7.png" alt="Gelas bersulang" class="w-full h-full object-contain mix-blend-multiply">
+        </div>
+
+        <h3 class="font-wedding text-3xl md:text-4xl text-gray-800 mb-4">
+            
+        </h3>
+
+        <p class="text-gray-800 font-semibold text-base mb-1">
+            
+        </p>
+
+        <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-6 px-4">
+            
+        </p>
+
+        <hr class="border-t border-gray-200 my-6">
+
+        <!-- Grid Tanggal & Waktu -->
+        <div class="grid grid-cols-2 gap-4">
+            <!-- Tanggal -->
+            <div class="flex flex-col items-center p-3 bg-gray-50 rounded-xl border border-gray-100">
+                <div class="w-10 h-10 mb-2 rounded-full bg-[#ffd596]/20 flex items-center justify-center text-[#c89b58]">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                </div>
+                <span class="text-sm text-gray-500"></span>
+                <span class="text-sm  text-gray-800"></span>
+            </div>
+
+            <!-- Waktu -->
+            <div class="flex flex-col items-center p-3 bg-gray-50 rounded-xl border border-gray-100">
+                <div class="w-10 h-10 mb-2 rounded-full bg-[#ffd596]/20 flex items-center justify-center text-[#c89b58]">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <span class="text-sm text-gray-500">Waktu</span>
+                <span class="text-sm  text-gray-800"></span>
+                <span class="text-[12px] text-gray-400">Until End</span>
+            </div>
+
+            <div class="col-span-2">
+                <a href="https://maps.app.goo.gl/QE11t2LpFo9trizy5" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 p-3.5 bg-[#ffd596]/20 hover:bg-[#ffd596]/30 transition rounded-xl border border-[#ffd596] text-[#8a652f] font-semibold text-sm shadow-sm">
+                    <svg class="w-5 h-5 text-[#c89b58]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    Lihat Lokasi (Google Maps)
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    </div>
+</section>
+    <hr class="w-full border-t-2 border-[#c89b58] opacity-40">
+
+<section id="ucapan" class="invitation-section py-16 px-4 min-h-screen flex items-center justify-center bg-[#8d448b]" style="background-image: url('assets/8.png');">
+    
+    <div class="max-w-4xl mx-auto w-full relative z-10 px-4 sm:px-10 pb-20">
+        
+        <h3 class="text-3xl font-wedding text-center text-gray-800 mb-4">Ucapan & Doa</h3>
+
+        <p class="text-center text-gray-600 max-w-xl mx-auto text-sm md:text-base leading-relaxed mb-4">
+            Tiada Yang Dapat Kami Ungkapkan Selain Rasa Terimakasih Dari Hati Yang Tulus Apabila Bapak/ Ibu/ Saudara/i Berkenan Hadir Untuk Memberikan Do’a Restu Kepada Kami    
+        </p>
+
+        <div class="bg-white/80 border border-[#c89b58]/50 rounded-2xl shadow-xl p-6 sm:p-8 backdrop-blur-sm">
+            <div class="max-h-96 overflow-y-auto space-y-4 pr-2">
+                <div id="guestbook-list" class="space-y-4" aria-live="polite"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <section id="amplop" class="invitation-section py-16 px-4 min-h-screen flex items-center justify-center bg-white">
+    <div class="max-w-4xl mx-auto w-full">
+        
+        <div class="text-center mb-12 ml">
+            <h2 class="font-wedding text-4xl md:text-5xl text-gray-800 mb-4">
+                Amplop Digital
+            </h2>
+
+            <p class="text-gray-600 max-w-xl mx-auto text-sm md:text-base leading-relaxed">
+                Terima kasih telah melakukan konfirmasi kehadiran. Doa Bapak/ Ibu/ Saudara/i sudah merupakan hadiah terbaik bagi kami. Namun, jika memberi adalah bentuk tanda kasih Anda, fitur ini dapat memberikan Anda kemudahan
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+        <!-- Card 1: Mandiri -->
+        <div class="bg-white rounded-[28px] p-8 text-center shadow-xl border-t-[6px] border-[#ffd596]">
+            <!-- Logo Bank di Kanan Atas -->
+            <div class="flex justify-end mb-6">
+                <img src="assets/images/21.jpg" alt="Mandiri" class="h-7 object-contain">
+            </div>
+
+            <!-- Nomor Rekening & Tombol Salin -->
+            <div class="text-left mb-6">
+                <p class="text-xs md:text-sm text-gray-500 mb-1">Nomor Rekening</p>
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                    <span class="text-xl md:text-2xl tracking-wider text-gray-800"></span>
+                    <button data-copy-number="" type="button" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-[#a3e635] hover:bg-[#86efac] text-gray-800 text-sm font-medium rounded-xl transition shadow-sm self-start sm:self-auto cursor-pointer">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                        Salin
+                    </button>
+                </div>
+            </div>
+
+            <!-- Informasi Pemilik & Tanggal -->
+            <div class="flex justify-between items-end text-left pt-2 border-t border-gray-100">
+                <div>
+                    <p class="text-xs text-gray-500 mb-0.5">Atas Nama</p>
+                    <p class="text-sm md:text-base text-gray-800"></p>
+                </div>
+                <div class="text-right">
+                    <p class="text-xs text-gray-500 mb-0.5">Pernikahan</p>
+                    <p class="text-sm md:text-base  text-gray-800"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: OVO -->
+        <div class="bg-white rounded-[28px] p-8 text-center shadow-xl border-t-[6px] border-[#ffd596]">
+            <!-- Logo OVO di Kanan Atas -->
+            <div class="flex justify-end mb-6">
+                <img src="assets/images/22.jpg" alt="OVO" class="h-7 object-contain">
+            </div>
+
+            <!-- Nomor Rekening & Tombol Salin -->
+            <div class="text-left mb-6">
+                <p class="text-xs md:text-sm text-gray-500 mb-1">Nomor Rekening</p>
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                    <span class="text-xl md:text-2xl tracking-wider text-gray-800"></span>
+                    <button data-copy-number="" type="button" class="inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-[#a3e635] hover:bg-[#86efac] text-gray-800 text-sm font-medium rounded-xl transition shadow-sm self-start sm:self-auto cursor-pointer">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                        Salin
+                    </button>
+                </div>
+            </div>
+
+            <!-- Informasi Pemilik & Tanggal -->
+            <div class="flex justify-between items-end text-left pt-2 border-t border-gray-100">
+                <div>
+                    <p class="text-xs text-gray-500 mb-0.5">Atas Nama</p>
+                    <p class="text-sm md:text-base text-gray-800"></p>
+                </div>
+                <div class="text-right">
+                    <p class="text-xs text-gray-500 mb-0.5">Pernikahan</p>
+                    <p class="text-sm md:text-base  text-gray-800"></p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+    <audio id="background-music" src="assets/lagu.mp3" autoplay loop preload="auto"></audio>
+    <span id="music-status" class="sr-only" aria-live="polite"></span>
+    <script type="module">
+        const audio = document.querySelector('#background-music');
+        const toggle = document.querySelector('#music-toggle');
+        const playIcon = document.querySelector('#music-play-icon');
+        const pauseIcon = document.querySelector('#music-pause-icon');
+        const status = document.querySelector('#music-status');
+        const openButton = document.querySelector('#open-invitation');
+
+        function updateMusicState(isPlaying) {
+            playIcon.classList.toggle('hidden', isPlaying);
+            pauseIcon.classList.toggle('hidden', !isPlaying);
+            toggle.setAttribute('aria-pressed', String(isPlaying));
+            toggle.setAttribute('aria-label', isPlaying ? 'Jeda musik' : 'Putar musik');
+            toggle.title = isPlaying ? 'Jeda musik' : 'Putar musik';
+        }
+
+        async function playMusic() {
+            try {
+                await audio.play();
+                status.textContent = 'Musik sedang diputar.';
+            } catch (error) {
+                updateMusicState(false);
+                if (error instanceof DOMException && error.name === 'NotAllowedError') {
+                    status.textContent = 'Autoplay diblokir browser. Tekan tombol musik untuk memulai.';
+                    return;
+                }
+
+                status.textContent = 'Musik tidak dapat diputar. Periksa file assets/lagu.mp3.';
+                console.error('Background music could not be played.', error);
+            }
+        }
+
+        audio.addEventListener('play', () => updateMusicState(true));
+        audio.addEventListener('pause', () => {
+            updateMusicState(false);
+            status.textContent = 'Musik dijeda.';
+        });
+        audio.addEventListener('error', () => {
+            updateMusicState(false);
+            status.textContent = 'Musik tidak dapat dimuat. Periksa file assets/lagu.mp3.';
+        });
+
+        void playMusic();
+
+        openButton?.addEventListener('click', async () => {
+            await playMusic();
+            document.querySelector('#couple').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.addEventListener('pointerdown', (event) => {
+            const target = event.target;
+            const clickedControl = target instanceof Element && target.closest('#music-toggle, #open-invitation');
+            if (audio.paused && !clickedControl) {
+                void playMusic();
+            }
+        }, { once: true });
+
+        document.addEventListener('keydown', () => {
+            if (audio.paused) {
+                void playMusic();
+            }
+        }, { once: true });
+
+        toggle.addEventListener('click', () => {
+            if (audio.paused) {
+                void playMusic();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
+</body>
+</html>

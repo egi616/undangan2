@@ -1,0 +1,27 @@
+{
+  "coverDateText": "10 September 2027",
+  "countdownTarget": "2027-09-18T07:00:00+07:00",
+  "events": [
+    {
+      "name": "Akad Nikah",
+      "venue": "Masjid Agung Cianjur",
+      "address": "Jl. Pamoyanan, Pasir Gede., Kec. Jambe Prpt., Kota Cianjur, Jawabarat",
+      "dateText": "18 September 2027",
+      "dayText": "Sabtu",
+      "timeText": "07.00 WIB",
+      "mapUrl": "https://maps.app.goo.gl/ujqYrJUnKLBDaGHs5",
+      "image": "assets/6.png"
+    },
+    {
+      "name": "Resepsi Nikah",
+      "venue": "Charaka Hotel",
+      "address": "Jl. raya sukabumi, Pasir Gede., Kec. Jambe Prpt., Kota Cianjur, Jawabarat",
+      "dateText": "18 September 2027",
+      "dayText": "Sabtu",
+      "timeText": "13.00 WIB",
+      "mapUrl": "https://maps.app.goo.gl/QE11t2LpFo9trizy5",
+      "image": "assets/7.png"
+    }
+  ],
+  "rsvpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeMdw15IvAYaKq7sQTzlfMHrUvWl8-FV0CntKaX-lTwcvEDXA/viewform?usp=header"
+}
